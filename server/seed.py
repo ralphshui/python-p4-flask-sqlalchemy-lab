@@ -19,7 +19,7 @@ with app.app_context():
     for n in range(25):
         zk = Zookeeper(name=fake.name(), birthday=fake.date_between(
             start_date='-70y', end_date='-18y'))
-        zookeepers.append(zk)
+        zookeepers.append(zk)   
 
     db.session.add_all(zookeepers)
 
